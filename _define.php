@@ -1,17 +1,16 @@
 <?php
 # -- BEGIN LICENSE BLOCK ----------------------------------
-#
-# This file is part of Domino, a Dotclear 2 theme.
+# This file is part of Domino, a theme for Dotclear 2.
 #
 # Copyright (c) Franck Paul and contributors
-# http://open-time.net/
-#
+# carnet.franck.paul@gmail.com
 #
 # Licensed under the GPL version 2.0 license.
-# See LICENSE file or
+# A copy of this license is available in LICENSE file or at
 # http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-#
 # -- END LICENSE BLOCK ------------------------------------
+
+if (!defined('DC_RC_PATH')) { return; }
 
 $this->registerModule(
 	/* Name */			"Domino",
@@ -19,4 +18,3 @@ $this->registerModule(
 	/* Author */			"Franck Paul",
 	/* Version */			'1.5'
 );
-?>

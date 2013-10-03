@@ -756,6 +756,7 @@ feed.png a piocher dans le theme par defaut par ex.) */
 #content img {
 	border: 0 none;
 	padding: 0;
+	max-width: 100%;
 }
 
 #content img[src^="/public/"] {
