@@ -1,0 +1,831 @@
+/* 
+
+# -- BEGIN LICENSE BLOCK ----------------------------------
+#
+# This file is part of Domino, a Dotclear 2 theme.
+#
+# Copyright (c) Franck Paul and contributors
+# http://open-time.net/
+#
+#
+# Licensed under the GPL version 2.0 license.
+# See LICENSE file or
+# http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+#
+# -- END LICENSE BLOCK ------------------------------------
+
+*/
+
+/* Domino */
+
+/* -----------------------------------------------------------------
+	1. STRUCTURE
+------------------------------------------------------------------ */
+@import url(layout.css);
+
+
+/* ------------------------------------------------------------
+	2. BALISES HTML PAR DEFAUT
+------------------------------------------------------------- */
+
+body {
+	color: #000000;
+	background: transparent url('images/fond.png') repeat-y center top;
+	font-size: 76%;
+	font-family: "lucida grande", "gill sans", arial, sans-serif;
+}
+ 
+h1 { }
+h2 { }
+h3 { }
+h4 { }
+h5 { }
+h6 { }
+
+p { }
+img { }
+sup { }
+abbr, acronym { }
+
+blockquote, q { }
+blockquote { 
+	background: transparent url(images/quote.gif) no-repeat scroll left top;
+	margin: 1em;
+	padding: 0 0 0 70px;
+}
+cite { }
+
+[lang="fr"] q, q[lang="fr"] {
+	quotes: "« " " »";
+}
+
+ul { }
+ol { }
+dl { }
+
+form { }
+fieldset {
+	border: none;
+	display: block;
+	margin: 0 0 0.5em;
+	padding: 0;
+}
+input { 
+	border-color: #333; 
+	border-width: 1px; 
+	border-style: solid; 
+	padding: 0.25em 0.6em;
+	background: #f7f7f7;
+}
+input:hover {
+	border-color: #000;
+}
+label { }
+textarea {
+	width: 95%;
+}
+
+a {
+	color: #fcfcfc;
+	text-decoration: none;
+	outline: none;
+}
+a:link { }
+a:visited { }
+a:hover { }
+a:focus { }
+a[hreflang]:after {
+	content: "\0000a0[" attr(hreflang) "]";
+}
+a[hreflang|="fr"]:after {
+	content: "";
+}
+a[hreflang] {
+	content: normal !important;
+}
+
+a img { }
+
+code, pre { 
+	font: 1em "liberation mono", "Andale Mono", "DejaVu Sans Mono", "Courier New", Courier, monospace;
+}
+code {
+	background: #ddd;
+	padding: 3px 5px 2px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+pre {
+	overflow: auto;
+	display: block;
+	border: solid 1px #333333;
+	padding: 10px 20px 10px 30px;
+	margin: 1em 1em 1em 0;
+	text-align: left;
+	line-height: 125%;
+	white-space: pre-wrap;       /* css-3 */
+	white-space: -moz-pre-wrap important;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+hr {
+	border: 0 none;
+	height: 1px;
+	margin: 2em 10em;
+}
+
+sup {
+	line-height: 1em;
+}
+
+
+/* ------------------------------------------------------------
+	3. PAGE
+------------------------------------------------------------- */
+ 
+#page { }
+
+ 
+/* ------------------------------------------------------------
+	4. HAUT DE PAGE
+------------------------------------------------------------- */
+
+#top {
+	background: transparent url('images/titre.png') no-repeat 50% 50%;
+	text-align: left;
+}
+#top h1 {
+}
+#top h1 a {
+	color: #333; 
+	font-size: 0.8em;
+}
+
+#prelude {
+	background: transparent url('images/dominos.png') no-repeat right bottom;
+	color: #fcfcfc;
+}
+#prelude a {
+	color: #fcfcfc;
+}
+
+
+/* ------------------------------------------------------------
+	5. WRAPPER MAIN CONTENT
+------------------------------------------------------------- */
+
+#wrapper { }
+#main {
+	font-size: 1.05em;
+	text-align: justify;
+}
+#main a {
+	color: #ff7f00; 
+}
+
+#content { }
+
+#content-img {
+	color: #ccc;
+}
+#content-img .post {
+	width: 418px;
+	margin: 0 auto;
+}
+
+#content-img a { 
+	color: #fcfcfc;
+}
+#content-img a:hover { 
+	color: #9fe60e;
+}
+#content-img h2 {
+	text-align: center;
+	font-family: "lucida grande", "gill sans", arial, sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 1.1em;
+}
+#content-img hr {
+	background-color: #9fe60e;
+	color: #9fe60e;
+}
+
+#content-text { }
+#content-text h2 {
+	margin: 0 0 0.5em;
+	padding: 4px 90px 0 38px;
+	background: transparent url('images/domino.png') no-repeat left 8px;
+	min-height: 1.5em;
+	text-align: left;
+}
+#content-text hr {
+	background-color: #333333;
+	color: #333333;
+}
+#content-text a:hover {
+	color: #363636;
+}
+
+#content-info { 
+	padding-right: 90px;
+}
+#content-info h2 { }
+#content-info p { }
+
+.content-inner { }
+
+.pagination, #navlinks {
+	margin: 4em 1em 1em;
+	padding: 0.2em;
+	text-align: center;
+	color: #ccc;
+	background-color: #333;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+#content-text .pagination a, #navlinks a {
+	color: #fff;
+}
+
+#content-text .pagination a:hover, #navlinks a:hover {
+	color: #9fe60e;
+}
+
+.pagination { }
+
+#navlinks { }
+
+
+/* ------------------------------------------------------------
+	6. BILLETS
+------------------------------------------------------------- */
+
+.post { 
+	margin-bottom: 2.5em;
+}
+.post.first { }
+.post.odd { }
+
+p.topfirst-separator {
+	margin-top: 3em;
+}
+
+.post h3, .post h4 {
+	clear: both;
+	margin-bottom: 1em;
+	margin-top: 2em;
+}
+
+.day-date {
+	display: none;
+}
+
+.post-title { }
+.post-info, .page-info, .post-tags, .post-info-co, .post-info-connexes { 
+	font-size: 0.93em;
+	line-height: 1.5em;
+}
+
+ul.post-tags {
+	list-style-type: none;
+	padding: 0;
+}
+
+ul.post-tags li {
+	display: inline;
+	margin: 0 1.2em 0 0;
+	padding: 0 0 2px 22px;
+	background: transparent url('images/tag.png') no-repeat left top;
+}
+
+.post-excerpt {
+	line-height: 1.6em;
+}
+.post-content {
+	line-height: 1.6em;
+}
+
+.post-content p, .post-excerpt p {
+	margin-top: 1.6em;
+	margin-bottom: 1.6em;
+}
+
+.post-content a {
+	text-decoration: underline;
+}
+
+#content-text .post-content p, #content-text .post-excerpt p { }
+
+#content-text .post-info, #content-text .post-tags, #content-text .page-info {
+	margin: 0;
+	text-align: left;
+}
+#content-text .post-info-co {
+	margin: 0;
+	text-align: right;
+}
+
+#content-text .post-info.signature, #content-text .page-info.signature {
+	text-align: right;
+}
+
+#content-text .post-info a, #content-text .page-info a, #content-text .post-tags a {
+	color: #777;
+}
+
+.read-it { 
+	font-size: 0.93em;
+}
+
+.post-content p.read-it, .post-excerpt p.read-it {
+	margin: -1em 0 0.5em;
+}
+
+.footnotes {
+	font-size: 0.9em;
+	text-align: left;
+}
+.footnotes h4 { }
+
+#content-text .footnotes p {
+	text-indent: 0;
+	margin-top: 1.2em;
+}
+
+.post-info-co { }
+
+.comment_count {
+	margin: 0 0 0 1.2em;
+	padding: 0 0 0 1.8em;
+	background: transparent url('images/balloon.png') no-repeat left top;
+}
+.ping_count {
+	margin: 0 0 0 1.2em;
+	padding: 0 0 0 1.8em;
+	background: transparent url('images/chain.png') no-repeat left top;
+}
+.attach_count {
+	margin: 0 0 0 1.2em;
+	padding: 0 0 0 1.8em;
+	background: transparent url('images/box.png') no-repeat left top;
+}
+
+#attachments { }
+#attachments h3 { }
+#attachments ul { }
+#attachments ul li { }
+#attachments li.audio { }
+#attachments li.package { }
+#attachments li.text { }
+
+
+/* ------------------------------------------------------------
+	7. COMMENTAIRES, PINGS
+------------------------------------------------------------- */
+
+#comments { }
+#pings { }
+#pr { }
+#comment-form { }
+
+#comments h3 { }
+#pings h3 { 
+	margin-top: 3em;
+}
+#pr h3 { }
+#comment-form h3 {
+	margin-top: 3em;
+}
+
+.comment-wrapper, .ping-wrapper {
+	background: transparent url(images/date-com.png) no-repeat; 
+	margin-bottom: 2em;
+	min-height: 50px; 
+	font-size: 0.93em;
+	line-height: 1.5em;
+}
+
+.comment-wrapper.me {
+	background: transparent url(images/date-com-me.png) no-repeat; 
+}
+
+.comment-wrapper p, .ping-wrapper p {
+	margin: 0;
+}
+
+.comment-number-date, .ping-number-date {
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+	width: 100px;
+	float: left;
+}
+
+.comment-number, .ping-number {
+	width: 43px;
+	height: 44px;
+	text-align: center;
+	float: left;
+	font-size: 1.66em;
+	line-height: 44px;
+}
+
+#main .me .comment-number a {
+	color: #9fe60e;
+}
+
+#main .me .comment-number a:hover {
+	color: #ff7f00;
+}
+
+.comment-date, .ping-date {
+	width: 43px;
+	height: 44px;
+	float: left;
+	position: relative;
+}
+
+.comment-date span, .ping-date span {
+	display: block;
+	position: absolute;
+}
+
+span.comment-day, span.ping-day {
+	top: 2px;
+	left: 5px;
+	color: #333;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+span.comment-month, span.ping-month {
+	top: 14px;
+	right: 2px;
+	color: #666;
+}
+
+span.comment-year, span.ping-year {
+	bottom: 0px;
+	left: 5px;
+	color: #bbb;
+	font-size: 1.25em;
+}
+
+p.comment-author-time, p.ping-author-time {
+	background: transparent url(images/clock.png) no-repeat;
+	padding-left: 20px;
+	margin-left: 100px;
+}
+
+span.comment-author.visitor, span.ping-author.visitor {
+	background: transparent url(images/bookmark.png) no-repeat scroll top right;
+	padding-right: 24px;
+}
+
+.comment-content, .ping-content {
+	margin-left: 100px;
+}
+
+.comment-content p, .ping-content p {
+	margin: 0.5em 0;
+}
+
+#comments .first { }
+#comments .odd { }
+#comments .me { }
+
+#pings .first { }
+#pings .odd { }
+
+#pr dl { }
+#pr dd { }
+
+#comment-form fieldset { }
+.field { }
+.field label {
+	clear: left;
+	display: block;
+	float: left;
+	width: 13em;
+}
+.field input { 
+	border: 1px solid #333;
+	padding: 0.25em;
+}
+.field textarea { 
+	border: 1px solid #333;
+	padding: 0.5em;
+}
+
+#comment-form input[type=submit] { }
+#comment-form input[type=reset] { }
+
+.form-help { }
+
+#ping-url { }
+#comments-feed { }
+
+
+/* ------------------------------------------------------------
+	8. SIDEBAR
+------------------------------------------------------------- */
+
+#sidebar {
+	color: #9fe60e;
+}
+#sidebar #blogextra { }
+#blognav { }
+#blogextra { }
+#blogextra a {
+}
+#blognav a:hover, #blogextra a:hover {
+	color: #ff7f00;
+}
+
+#sidebar h2 {
+	margin-top: 1.5em;
+	text-align: left;
+	font-size: 1.2em;
+}
+#sidebar h3 {
+	font-size: 1em;
+}
+#sidebar ul {
+	padding: 0;
+}
+#sidebar li { }
+
+#sidebar ul ul { }
+
+#blognav ul, #blogextra ul {
+    margin-left: 1.2em;
+}
+#blognav ul li, #blogextra ul li {
+	margin: 0;
+	padding: 0;
+	text-indent: 0;
+	list-style-position: outside;
+}
+
+/* boites du menu des widgets livres avec Dotclear */
+#search { }
+#search form { }
+#search p {
+	margin: 0;
+}
+#search input[type=text] {
+	background: #fcfcfc url(images/magnifier.png) no-repeat scroll 0.5em center;
+	border: 1px solid #fcfcfc;
+	padding: 0.25em 0.25em 0.25em 2.5em;
+	width: 12em;
+} /* ou #search #q */
+#search input[type=submit] { } /* ou #search .submit */
+
+#topnav { }
+#topnav ul li, #topnav ul li a {
+	display: inline;
+}
+
+.topnav-arch { }
+.topnav-home { }
+
+.selected { }
+.langs { }
+.categories { }
+
+.syndicate { }
+
+#blognav .syndicate ul, #blogextra .syndicate ul {
+	list-style: none;
+	margin-left: 0;
+}
+
+.lastposts { }
+.lastcomments { }
+.text { }
+.links { }
+
+.tags { }
+.tags ul { }
+.tags li { }
+/* a completer separement ou globalement pour le sidebar et la page 
+specifique des tags avec les differentes class des tags en fonction 
+de leur frequence - voir 10/ classes communes */
+
+
+/* ------------------------------------------------------------
+	9. FOOTER
+------------------------------------------------------------- */
+
+#footer {
+	color: #9fe60e;
+}
+#footer a {
+	color: #fcfcfc;
+}
+#footer a:hover {
+	color: #ff7f00;
+}
+#footer p {
+	margin-left: 1em;
+}
+
+
+/* ------------------------------------------------------------
+	10. CLASSES COMMUNES
+------------------------------------------------------------- */
+
+/* class sur les liens rss (on peut y placer l'icone
+feed.png a piocher dans le theme par defaut par ex.) */
+
+.feed { 
+	background: transparent url(images/feed.png) no-repeat left bottom;
+	padding-left: 1.8em;
+	line-height: 1.5em;
+}
+
+/* tags dans le sidebar et dans la page les regroupant
+(exemple ici pour un nuage) */
+.dc-tags #content ul li, .dc-tags #content ul li a, .tags ul li, .tags ul li a {
+	display: inline;
+	width: auto;
+	padding-left: 0;
+	padding-right: 4px;
+	background: transparent;
+	line-height: 1.5em;
+}
+.tags ul li a:hover {
+	background-image :none;
+}
+.dc-tags .tag0, .tags .tag0 { font-size: 85%; }
+.dc-tags .tag10, .tags .tag10 { font-size: 90%; }
+.dc-tags .tag20, .tags .tag20 { font-size: 95%; }
+.dc-tags .tag30, .tags .tag30 { font-size: 100%; }
+.dc-tags .tag40, .tags .tag40 { font-size: 105%; }
+.dc-tags .tag50, .tags .tag50 { font-size: 110%; }
+.dc-tags .tag60, .tags .tag60 { font-size: 115%; }
+.dc-tags .tag70, .tags .tag70 { font-size: 120%; }
+.dc-tags .tag80, .tags .tag80 { font-size: 125%; }
+.dc-tags .tag90, .tags .tag90 { font-size: 130%; }
+.dc-tags .tag100, .tags .tag100 { font-size: 135%; }
+.tags p {
+	background: transparent url(images/tags.png) no-repeat left bottom;
+	padding-left: 1.8em;
+	line-height: 1.5em;
+}
+
+/* messages d'erreur */
+.error {
+	border: 1px solid #333333;
+	background : #ddff00;
+	padding: 0.5em;
+}
+.error ul {
+	padding-left: 20px;
+}
+.error li {
+	list-style: square;
+}
+	
+/* exemples de ceux que j'ajoute souvent */
+.left { float: left; margin-right : 1em; }
+.right { float: right; margin-left : 1em; }
+.center { margin-left : auto; margin-right : auto; }
+.left-text { text-align : left; }
+.right-text { text-align : right; }
+.center-text { text-align : center; }
+.little-text { font-size : .8em;}
+.little-upper-text { font-size : .8em; text-transform : uppercase; }
+
+
+/* ------------------------------------------------------------
+	11. PAGES SPECIFIQUES
+	j'indique le marqueur du body, a completer pour cibler 
+	plus precisement (cf l'exemple ci-dessus pour les tags)
+------------------------------------------------------------- */
+
+.dc-home { }
+.dc-home #blogextra a { }
+.dc-home #blogextra a:hover { }
+
+.dc-post { }
+.dc-categories { }
+.dc-category { }
+.dc-archive { }
+.dc-archive-month { }
+.dc-archive-month #content-text h2 {
+	margin-top: 1.5em;
+}
+.dc-archive-month #content-text p.post-content {
+	margin-left: 3em;
+	font-size: 0.9em;
+	line-height: 1.5em;
+}
+.dc-archive-month #content-text p.post-info {
+	text-align: left;
+	margin-left: 3em;
+}
+.dc-archive-month #content-text p.post-info-co {
+	text-align: left;
+	margin-left: 2em;
+}
+
+.dc-tags { }
+.dc-tag { }
+.dc-404 { }
+.dc-search { }
+
+
+/* ---------------------------------------------------
+  12. ET POUR FINIR NE PAS OUBLIER LES CLEARERS
+	ici ceux le plus souvent necessaires
+--------------------------------------------------- */
+
+.post, .post-content, .footnotes, .attachments, .post-info-co, #comments, #footer {
+	clear: both;
+}
+
+/* ---------------------------------------------------
+  13. LE RESTE
+--------------------------------------------------- */
+
+#content img {
+	border: 0 none;
+	padding: 0;
+}
+
+#content img[src^="/public/"] {
+	border: 8px solid #cccccc;
+	padding: 1px;
+}
+
+.contact-me p {
+	background: transparent url(images/mail.png) no-repeat scroll left bottom;
+	line-height: 1.5em;
+	padding-left: 1.8em;
+}
+
+/* Informations connexes en mode post */
+
+#content-img .post-info-connexes {
+	padding-bottom: 3em;
+}
+
+#content-img .post-info-connexes h3 {
+	color: #9fe60e;
+}
+
+#content-img .post-info-connexes ul {
+	margin-left: 1.2em;
+	padding: 0;
+	color: #9fe60e;
+}
+
+#content-img .post-info-connexes ul li {
+	margin: 0;
+	padding: 0;
+	text-indent: 0;
+}
+
+#content-img .post-info-connexes a {
+	color: #fcfcfc;
+	text-decoration: none;
+}
+
+#content-img .post-info-connexes a:hover {
+	color: #ff7f00;
+}
+
+/* Plugin YASH */
+#content-img div.dp-highlighter a, #content-text div.dp-highlighter a {
+	color: #333333;
+	font-weight: normal;
+}
+
+/* Hack special sidebar */
+
+.dc-home #sidebar:after {
+	content: '[ne pas supprimer, merci http://www.fu2k.org/alex/css/onetruelayout/]';
+	display: block;
+	height: 1px;
+	clear: both;
+	visibility: hidden;
+}
+#sidebar {
+	display: inline-block;
+}
+/*\*/
+* html #sidebar {
+	height: 1%;
+}
+.dc-home #sidebar {
+	display: block;
+}
+.dc-home #sidebar #blogextra {
+	display: block;
+}
+/* */
