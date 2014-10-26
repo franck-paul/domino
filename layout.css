@@ -1,4 +1,4 @@
-/* 
+/*
 
 # -- BEGIN LICENSE BLOCK ----------------------------------
 #
@@ -14,14 +14,14 @@
 #
 # -- END LICENSE BLOCK ------------------------------------
 
- 
+
  STRUCTURE POUR UNE COLONNE, MENU EN BAS EN DEUX PARTIES, LARGEUR FIXE
- 
- 
+
+
  --------------------------------------------------------------
 	AVANT TOUTE CHOSE
-	remise à zéro de toutes les marges des grands blocs pour que 
-	tous les navigateurs calculent depuis le même point de départ 
+	remise à zéro de toutes les marges des grands blocs pour que
+	tous les navigateurs calculent depuis le même point de départ
 --------------------------------------------------------------- */
 
 html, body, #page, #top, #prelude, #wrapper, #footer, #main, #content, #sidebar, #blognav, #blogextra {
@@ -32,7 +32,7 @@ html, body, #page, #top, #prelude, #wrapper, #footer, #main, #content, #sidebar,
 /* --------------------------------------------------------------
 	CENTRAGE DE LA PAGE DANS LA FENETRE DU NAVIGATEUR.
 	(supprimer ces lignes si on ne veut pas centrer)
-	Note : on peut remplacer la valeur (ici 0) des marges au-dessus 
+	Note : on peut remplacer la valeur (ici 0) des marges au-dessus
 	et en dessous de la page par la valeur de son choix (px ou em).
 --------------------------------------------------------------- */
 body {
@@ -68,7 +68,7 @@ body {
 	height: 100px;
 }
 #prelude {
-	display: block; 
+	display: block;
 	position: absolute;
 	right: 2em;
 	top: 0;

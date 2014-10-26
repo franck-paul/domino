@@ -14,7 +14,10 @@ if (!defined('DC_RC_PATH')) { return; }
 
 $this->registerModule(
 	/* Name */			"Domino",
-	/* Description*/		"Deviation Cafe-Creme, Structure Aorakit-1B de Kozlika",
-	/* Author */			"Franck Paul",
-	/* Version */			'1.5'
+	/* Description*/	"Deviation Cafe-Creme, Structure Aorakit-1B de Kozlika",
+	/* Author */		"Franck Paul",
+	/* Version */		'1.6',
+	array(
+		/* Type */		'type' =>			'theme'
+	)
 );

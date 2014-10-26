@@ -1,4 +1,4 @@
-/* 
+/*
 
 # -- BEGIN LICENSE BLOCK ----------------------------------
 #
@@ -34,7 +34,7 @@ body {
 	font-size: 76%;
 	font-family: "lucida grande", "gill sans", arial, sans-serif;
 }
- 
+
 h1 { }
 h2 { }
 h3 { }
@@ -48,7 +48,7 @@ sup { }
 abbr, acronym { }
 
 blockquote, q { }
-blockquote { 
+blockquote {
 	background: transparent url(images/quote.gif) no-repeat scroll left top;
 	margin: 1em;
 	padding: 0 0 0 70px;
@@ -70,10 +70,10 @@ fieldset {
 	margin: 0 0 0.5em;
 	padding: 0;
 }
-input { 
-	border-color: #333; 
-	border-width: 1px; 
-	border-style: solid; 
+input {
+	border-color: #333;
+	border-width: 1px;
+	border-style: solid;
 	padding: 0.25em 0.6em;
 	background: #f7f7f7;
 }
@@ -106,7 +106,7 @@ a[hreflang] {
 
 a img { }
 
-code, pre { 
+code, pre {
 	font: 1em "liberation mono", "Andale Mono", "DejaVu Sans Mono", "Courier New", Courier, monospace;
 }
 code {
@@ -145,10 +145,10 @@ sup {
 /* ------------------------------------------------------------
 	3. PAGE
 ------------------------------------------------------------- */
- 
+
 #page { }
 
- 
+
 /* ------------------------------------------------------------
 	4. HAUT DE PAGE
 ------------------------------------------------------------- */
@@ -160,7 +160,7 @@ sup {
 #top h1 {
 }
 #top h1 a {
-	color: #333; 
+	color: #333;
 	font-size: 0.8em;
 }
 
@@ -183,7 +183,7 @@ sup {
 	text-align: justify;
 }
 #main a {
-	color: #ff7f00; 
+	color: #ff7f00;
 }
 
 #content { }
@@ -196,10 +196,10 @@ sup {
 	margin: 0 auto;
 }
 
-#content-img a { 
+#content-img a {
 	color: #fcfcfc;
 }
-#content-img a:hover { 
+#content-img a:hover {
 	color: #9fe60e;
 }
 #content-img h2 {
@@ -230,7 +230,7 @@ sup {
 	color: #363636;
 }
 
-#content-info { 
+#content-info {
 	padding-right: 90px;
 }
 #content-info h2 { }
@@ -266,7 +266,7 @@ sup {
 	6. BILLETS
 ------------------------------------------------------------- */
 
-.post { 
+.post {
 	margin-bottom: 2.5em;
 }
 .post.first { }
@@ -287,7 +287,7 @@ p.topfirst-separator {
 }
 
 .post-title { }
-.post-info, .page-info, .post-tags, .post-info-co, .post-info-connexes { 
+.post-info, .page-info, .post-tags, .post-info-co, .post-info-connexes {
 	font-size: 0.93em;
 	line-height: 1.5em;
 }
@@ -339,7 +339,7 @@ ul.post-tags li {
 	color: #777;
 }
 
-.read-it { 
+.read-it {
 	font-size: 0.93em;
 }
 
@@ -395,7 +395,7 @@ ul.post-tags li {
 #comment-form { }
 
 #comments h3 { }
-#pings h3 { 
+#pings h3 {
 	margin-top: 3em;
 }
 #pr h3 { }
@@ -404,15 +404,15 @@ ul.post-tags li {
 }
 
 .comment-wrapper, .ping-wrapper {
-	background: transparent url(images/date-com.png) no-repeat; 
+	background: transparent url(images/date-com.png) no-repeat;
 	margin-bottom: 2em;
-	min-height: 50px; 
+	min-height: 50px;
 	font-size: 0.93em;
 	line-height: 1.5em;
 }
 
 .comment-wrapper.me {
-	background: transparent url(images/date-com-me.png) no-repeat; 
+	background: transparent url(images/date-com-me.png) no-repeat;
 }
 
 .comment-wrapper p, .ping-wrapper p {
@@ -512,11 +512,11 @@ span.comment-author.visitor, span.ping-author.visitor {
 	float: left;
 	width: 13em;
 }
-.field input { 
+.field input {
 	border: 1px solid #333;
 	padding: 0.25em;
 }
-.field textarea { 
+.field textarea {
 	border: 1px solid #333;
 	padding: 0.5em;
 }
@@ -612,8 +612,8 @@ span.comment-author.visitor, span.ping-author.visitor {
 .tags { }
 .tags ul { }
 .tags li { }
-/* a completer separement ou globalement pour le sidebar et la page 
-specifique des tags avec les differentes class des tags en fonction 
+/* a completer separement ou globalement pour le sidebar et la page
+specifique des tags avec les differentes class des tags en fonction
 de leur frequence - voir 10/ classes communes */
 
 
@@ -642,7 +642,7 @@ de leur frequence - voir 10/ classes communes */
 /* class sur les liens rss (on peut y placer l'icone
 feed.png a piocher dans le theme par defaut par ex.) */
 
-.feed { 
+.feed {
 	background: transparent url(images/feed.png) no-repeat left bottom;
 	padding-left: 1.8em;
 	line-height: 1.5em;
@@ -690,7 +690,7 @@ feed.png a piocher dans le theme par defaut par ex.) */
 .error li {
 	list-style: square;
 }
-	
+
 /* exemples de ceux que j'ajoute souvent */
 .left { float: left; margin-right : 1em; }
 .right { float: right; margin-left : 1em; }
@@ -704,7 +704,7 @@ feed.png a piocher dans le theme par defaut par ex.) */
 
 /* ------------------------------------------------------------
 	11. PAGES SPECIFIQUES
-	j'indique le marqueur du body, a completer pour cibler 
+	j'indique le marqueur du body, a completer pour cibler
 	plus precisement (cf l'exemple ci-dessus pour les tags)
 ------------------------------------------------------------- */
 
