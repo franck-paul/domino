@@ -1,38 +1,34 @@
 <?php
-# -- BEGIN LICENSE BLOCK ----------------------------------
-# This file is part of Domino, a theme for Dotclear 2.
-#
-# Copyright (c) Franck Paul and contributors
-# carnet.franck.paul@gmail.com
-#
-# Licensed under the GPL version 2.0 license.
-# A copy of this license is available in LICENSE file or at
-# http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-# -- END LICENSE BLOCK ------------------------------------
+/**
+ * @brief domino, a theme for Dotclear 2
+ *
+ * @package Dotclear
+ * @subpackage Themes
+ *
+ * @copyright Olivier Meunier & Association Dotclear
+ * @copyright GPL-2.0-only
+ */
 
-if (!defined('DC_RC_PATH')) { return; }
+namespace themes\domino;
 
-$core->addBehavior('publicPrepend',array('behaviorDominoTheme','publicPrepend'));
-$core->addBehavior('templateBeforeBlock',array('behaviorDominoTheme','templateBeforeBlock'));
+if (!defined('DC_RC_PATH')) {return;}
+
+\l10n::set(dirname(__FILE__) . '/locales/' . $_lang . '/main');
+
+$core->addBehavior('templateBeforeBlock', array(__NAMESPACE__ . '\behaviorDominoTheme', 'templateBeforeBlock'));
 
 class behaviorDominoTheme
 {
-	public static function publicPrepend($core)
-	{
-		$core->themes->loadModuleL10N($GLOBALS['__theme'],$GLOBALS['_lang'],'main');
-	}
-
-	public static function templateBeforeBlock($core,$b,$attr)
-	{
-	       if ($b == 'Entries' && isset($attr['exclude_current']) && $attr['exclude_current'] == 1)
-	       {
-				if( !isset($params['sql']) ) {
-					$params['sql'] = '';
-				}
-		       return
-		       "<?php\n".
-		       '@$params["sql"] .= "AND P.post_url != \'".$_ctx->posts->post_url."\' ";'."\n".
-		       "?>\n";
-	       }
-	}
+    public static function templateBeforeBlock($core, $b, $attr)
+    {
+        if ($b == 'Entries' && isset($attr['exclude_current']) && $attr['exclude_current'] == 1) {
+            if (!isset($params['sql'])) {
+                $params['sql'] = '';
+            }
+            return
+                "<?php\n" .
+                '@$params["sql"] .= "AND P.post_url != \'".$_ctx->posts->post_url."\' ";' . "\n" .
+                "?>\n";
+        }
+    }
 }
