@@ -15,7 +15,7 @@ if (!defined('DC_RC_PATH')) {return;}
 
 \l10n::set(dirname(__FILE__) . '/locales/' . $_lang . '/main');
 
-$core->addBehavior('templateBeforeBlock', array(__NAMESPACE__ . '\behaviorDominoTheme', 'templateBeforeBlock'));
+$core->addBehavior('templateBeforeBlock', [__NAMESPACE__ . '\behaviorDominoTheme', 'templateBeforeBlock']);
 
 class behaviorDominoTheme
 {

@@ -16,7 +16,8 @@ $this->registerModule(
     "Deviation Cafe-Creme, Structure Aorakit-1B de Kozlika", // Description
     "Franck Paul",                                           // Author
     '1.7',                                                   // Version
-    array(
-        'type' => 'theme' // Type
-    )
+    [
+        'requires' => [['core', '2.13']], // Dependencies
+        'type'     => 'theme'            // Type
+    ]
 );
