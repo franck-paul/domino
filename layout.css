@@ -8,10 +8,22 @@
   tous les navigateurs calculent depuis le même point de départ
 --------------------------------------------------------------- */
 
-html, body, #page, #top, #prelude, #wrapper, #footer, #main, #content, #sidebar, #blognav, #blogextra {
+html,
+body,
+#page,
+#top,
+#prelude,
+#wrapper,
+#footer,
+#main,
+#content,
+#sidebar,
+#blognav,
+#blogextra {
   margin: 0;
   padding: 0;
 }
+
 /* --------------------------------------------------------------
   CENTRAGE DE LA PAGE DANS LA FENETRE DU NAVIGATEUR.
   (supprimer ces lignes si on ne veut pas centrer)
@@ -22,11 +34,13 @@ html, body, #page, #top, #prelude, #wrapper, #footer, #main, #content, #sidebar,
 body {
   text-align: center;
 }
+
 #page {
   margin: 0 auto;
   text-align: left;
   position: relative;
 }
+
 /* -------------------------------------------------------------
   STRUCTURE FIXE - 1 COLONNE - MENU EN BAS EN DEUX PARTIES
   Vous pouvez modifier 760px par la valeur de votre choix.
@@ -36,10 +50,12 @@ body {
   width: 100%;
   max-width: 1600px;
 }
+
 #top {
   height: 120px;
   /* a modifier par la valeur de votre choix */
 }
+
 #top h1 {
   margin: 0;
   padding: 0;
@@ -47,11 +63,13 @@ body {
   /* idem que pour #top */
   width: 100%;
 }
+
 #top h1 a {
   display: block;
   width: 100%;
   height: 100px;
 }
+
 #prelude {
   display: block;
   position: absolute;
@@ -60,52 +78,63 @@ body {
   text-align: right;
   height: 200px;
 }
+
 #wrapper {
   padding: 0 30px;
 }
+
 .dc-home #wrapper {
   text-align: center;
 }
+
 #main {
   width: 100%;
   /* 760px; */
   margin: auto;
   text-align: left;
 }
+
 #content {
   margin: 0 1.5em 1.5em;
 }
+
 #content-text {
   width: 46%;
   float: right;
   padding-left: 1em;
 }
+
 #content-img {
   width: 46%;
   float: left;
   padding-right: 1em;
 }
+
 #footer {
   text-align: left;
   clear: both;
   margin: 0;
   padding: 10px;
 }
+
 #sidebar {
   clear: both;
   text-align: left;
   width: 46%;
 }
+
 .dc-home #sidebar {
   margin-top: 7em;
   width: auto;
 }
+
 #blognav {
   margin: 0;
   padding: 0 10px 10px;
   width: 40%;
   float: left;
 }
+
 #blogextra {
   margin: 0;
   padding: 0 10px 10px;

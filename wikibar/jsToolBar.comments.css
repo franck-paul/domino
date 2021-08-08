@@ -1,17 +1,22 @@
 .jstEditor {}
-.jstEditor textarea, .jstEditor iframe {
+
+.jstEditor textarea,
+.jstEditor iframe {
   margin-top: 1em;
   border: 1px solid #333333;
 }
+
 .jstHandle {
   height: 16px;
   font-size: 0.1em;
   cursor: s-resize;
   background: transparent url(img/resizer.png) no-repeat 45% 50%;
 }
+
 .jstElements {
   padding: 3px 3px;
 }
+
 .jstElements button {
   margin-right: 6px;
   width: 24px;
@@ -24,50 +29,64 @@
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
+
 .jstElements button:hover {
   border-color: #999999;
 }
+
 .jstElements button span {
   display: none;
 }
+
 .jstElements span {
   display: inline;
 }
+
 .jstSpacer {
   width: 0px;
   font-size: 1px;
   margin-right: 4px;
 }
+
 /* Buttons
 -------------------------------------------------------- */
 
 .jstb_strong {
   background-image: url(img/bt_strong.png);
 }
+
 .jstb_em {
   background-image: url(img/bt_em.png);
 }
+
 .jstb_ins {
   background-image: url(img/bt_ins.png);
 }
+
 .jstb_del {
   background-image: url(img/bt_del.png);
 }
+
 .jstb_quote {
   background-image: url(img/bt_quote.png);
 }
+
 .jstb_code {
   background-image: url(img/bt_code.png);
 }
+
 .jstb_br {
   background-image: url(img/bt_br.png);
 }
+
 .jstb_ul {
   background-image: url(img/bt_ul.png);
 }
+
 .jstb_ol {
   background-image: url(img/bt_ol.png);
 }
+
 .jstb_link {
   background-image: url(img/bt_link.png);
 }
