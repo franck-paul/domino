@@ -1,8 +1,8 @@
 <modules xmlns:da="http://dotaddict.org/da/">
   <module id="domino">
-    <name>Deviation Cafe-Creme, Structure Aorakit-1B de Kozlika</name>
+    <name>Domino</name>
     <version>1.7</version>
-    <author>Deviation Cafe-Creme, Structure Aorakit-1B de Kozlika</author>
+    <author>Franck Paul</author>
     <desc>Deviation Cafe-Creme, Structure Aorakit-1B de Kozlika</desc>
     <file>https://github.com/franck-paul/domino/releases/download/1.7/theme-domino-1.7.zip</file>
     <da:dcmin>2.19</da:dcmin>
