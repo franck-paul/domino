@@ -13,16 +13,16 @@ if (!defined('DC_RC_PATH')) {
 }
 
 $this->registerModule(
-    'Domino',                                                // Name
-    'Deviation Cafe-Creme, Structure Aorakit-1B de Kozlika', // Description
-    'Franck Paul',                                           // Author
-    '1.7',                                                   // Version
+    'Domino',
+    'Deviation Cafe-Creme, Structure Aorakit-1B de Kozlika',
+    'Franck Paul',
+    '2.0',
     [
-        'requires' => [['core', '2.19']], // Dependencies
-        'type'     => 'theme',            // Type
+        'requires' => [['core', '2.24']],
+        'type'     => 'theme',
 
-        'details'    => 'https://open-time.net/?q=domino',       // Details URL
-        'support'    => 'https://github.com/franck-paul/domino', // Support URL
-        'repository' => 'https://raw.githubusercontent.com/franck-paul/domino/main/dcstore.xml'
+        'details'    => 'https://open-time.net/?q=domino',
+        'support'    => 'https://github.com/franck-paul/domino',
+        'repository' => 'https://raw.githubusercontent.com/franck-paul/domino/main/dcstore.xml',
     ]
 );
