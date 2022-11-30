@@ -1,11 +1,11 @@
 <modules xmlns:da="http://dotaddict.org/da/">
   <module id="domino">
     <name>Domino</name>
-    <version>1.7</version>
+    <version>2.0</version>
     <author>Franck Paul</author>
     <desc>Deviation Cafe-Creme, Structure Aorakit-1B de Kozlika</desc>
-    <file>https://github.com/franck-paul/domino/releases/download/1.7/theme-domino-1.7.zip</file>
-    <da:dcmin>2.19</da:dcmin>
+    <file>https://github.com/franck-paul/domino/releases/download/2.0/theme-domino-2.0.zip</file>
+    <da:dcmin>2.24</da:dcmin>
     <da:details>https://open-time.net/?q=domino</da:details>
     <da:support>https://github.com/franck-paul/domino</da:support>
   </module>
