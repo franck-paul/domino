@@ -9,8 +9,10 @@
 # DOT NOT MODIFY THIS FILE !
 #
 
-l10n::$locales['previous entry'] = 'billet plus ancien';
-l10n::$locales['next entry'] = 'billet plus r&eacute;cent';
-l10n::$locales['previous entries'] = 'billets plus anciens';
-l10n::$locales['next entries'] = 'billets plus r&eacute;cents';
-l10n::$locales['Continue reading'] = 'Lire la suite&hellip;';
+use Dotclear\Helper\L10n;
+
+L10n::$locales['previous entry'] = 'billet plus ancien';
+L10n::$locales['next entry'] = 'billet plus r&eacute;cent';
+L10n::$locales['previous entries'] = 'billets plus anciens';
+L10n::$locales['next entries'] = 'billets plus r&eacute;cents';
+L10n::$locales['Continue reading'] = 'Lire la suite&hellip;';

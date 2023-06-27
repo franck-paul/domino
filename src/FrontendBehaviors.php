@@ -1,28 +1,20 @@
 <?php
 /**
- * @brief domino, a theme for Dotclear 2
+ * @brief domino, a plugin for Dotclear 2
  *
  * @package Dotclear
- * @subpackage Themes
+ * @subpackage Plugins
  *
- * @copyright Franck Paul (carnet.franck.paul@gmail.com)
- * @copyright GPL-2.0
+ * @author Franck Paul and contributors
+ *
+ * @copyright Franck Paul carnet.franck.paul@gmail.com
+ * @copyright GPL-2.0 https://www.gnu.org/licenses/gpl-2.0.html
  */
+declare(strict_types=1);
 
-namespace themes\domino;
+namespace Dotclear\Plugin\domino;
 
-if (!defined('DC_RC_PATH')) {
-    return;
-}
-
-use l10n;
-use dcCore;
-
-l10n::set(__DIR__ . '/locales/' . \dcCore::app()->lang . '/main');
-
-dcCore::app()->addBehavior('templateBeforeBlockV2', [__NAMESPACE__ . '\behaviorDominoTheme', 'templateBeforeBlock']);
-
-class behaviorDominoTheme
+class FrontendBehaviors
 {
     public static function templateBeforeBlock($b, $attr)
     {
