@@ -12,7 +12,7 @@
  */
 declare(strict_types=1);
 
-namespace Dotclear\Plugin\domino;
+namespace Dotclear\Theme\domino;
 
 class FrontendBehaviors
 {
