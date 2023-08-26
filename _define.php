@@ -12,7 +12,7 @@ $this->registerModule(
     'Domino',
     'Deviation Cafe-Creme, Structure Aorakit-1B de Kozlika',
     'Franck Paul',
-    '3.0',
+    '4.0',
     [
         'requires' => [['core', '2.27'], ['php', '8.1']],
         'type'     => 'theme',
