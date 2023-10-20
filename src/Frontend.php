@@ -14,7 +14,7 @@ declare(strict_types=1);
 
 namespace Dotclear\Theme\domino;
 
-use dcCore;
+use Dotclear\App;
 use Dotclear\Core\Process;
 
 class Frontend extends Process
@@ -30,7 +30,9 @@ class Frontend extends Process
             return false;
         }
 
-        dcCore::app()->addBehavior('templateBeforeBlockV2', FrontendBehaviors::templateBeforeBlock(...));
+        App::behavior()->addBehaviors([
+            'templateBeforeBlockV2' => FrontendBehaviors::templateBeforeBlock(...),
+        ]);
 
         return true;
     }

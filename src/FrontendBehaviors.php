@@ -26,7 +26,7 @@ class FrontendBehaviors
 
             return
                 "<?php\n" .
-                '@$params["sql"] .= "AND P.post_url != \'".dcCore::app()->ctx->posts->post_url."\' ";' . "\n" .
+                '@$params["sql"] .= "AND P.post_url != \'".App::frontend()->context()->posts->post_url."\' ";' . "\n" .
                 "?>\n";
         }
     }
