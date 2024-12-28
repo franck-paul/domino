@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @brief domino, a plugin for Dotclear 2
  *
@@ -16,7 +17,7 @@ namespace Dotclear\Theme\domino;
 
 class FrontendBehaviors
 {
-    public static function templateBeforeBlock($b, $attr)
+    public static function templateBeforeBlock($b, $attr): string
     {
         $params = [];
         if ($b == 'Entries' && isset($attr['exclude_current']) && $attr['exclude_current'] == 1) {
@@ -29,5 +30,7 @@ class FrontendBehaviors
                 '@$params["sql"] .= "AND P.post_url != \'".App::frontend()->context()->posts->post_url."\' ";' . "\n" .
                 "?>\n";
         }
+
+        return '';
     }
 }
