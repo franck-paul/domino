@@ -22,5 +22,6 @@ $this->registerModule(
         'details'    => 'https://open-time.net/?q=domino',
         'support'    => 'https://github.com/franck-paul/domino',
         'repository' => 'https://raw.githubusercontent.com/franck-paul/domino/main/dcstore.xml',
+        'license'    => 'gpl2',
     ]
 );
