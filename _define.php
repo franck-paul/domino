@@ -13,9 +13,9 @@ $this->registerModule(
     'Domino',
     'Deviation Cafe-Creme, Structure Aorakit-1B de Kozlika',
     'Franck Paul',
-    '5.3',
+    '6.0',
     [
-        'date'     => '2025-05-15T18:46:18+0200',
+        'date'     => '2025-06-27T13:00:22+0200',
         'requires' => [['core', '2.35']],
         'type'     => 'theme',
         'overload' => true,
