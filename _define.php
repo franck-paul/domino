@@ -16,8 +16,9 @@ $this->registerModule(
     '5.3',
     [
         'date'     => '2025-05-15T18:46:18+0200',
-        'requires' => [['core', '2.28']],
+        'requires' => [['core', '2.35']],
         'type'     => 'theme',
+        'overload' => true,
 
         'details'    => 'https://open-time.net/?q=domino',
         'support'    => 'https://github.com/franck-paul/domino',

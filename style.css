@@ -4,14 +4,14 @@
   1. STRUCTURE
 ------------------------------------------------------------------ */
 
-@import url(layout.css);
+@import url(index.php?tf=layout.css);
 /* ------------------------------------------------------------
   2. BALISES HTML PAR DEFAUT
 ------------------------------------------------------------- */
 
 body {
   color: #000000;
-  background: transparent url('images/fond.png') repeat-y center top;
+  background: transparent url(index.php?tf=images/fond.png) repeat-y center top;
   font-size: 76%;
   font-family: 'lucida grande', 'gill sans', arial, sans-serif;
 }
@@ -52,7 +52,7 @@ q {
 }
 
 blockquote {
-  background: transparent url(images/quote.gif) no-repeat scroll left top;
+  background: transparent url(index.php?tf=images/quote.gif) no-repeat scroll left top;
   margin: 1em;
   padding: 0 0 0 70px;
 }
@@ -209,7 +209,7 @@ sub {
 ------------------------------------------------------------- */
 
 #top {
-  background: transparent url('images/titre.png') no-repeat 50% 50%;
+  background: transparent url(index.php?tf=images/titre.png) no-repeat 50% 50%;
   text-align: left;
 }
 
@@ -222,7 +222,7 @@ sub {
 }
 
 #prelude {
-  background: transparent url('images/dominos.png') no-repeat right bottom;
+  background: transparent url(index.php?tf=images/dominos.png) no-repeat right bottom;
   color: #fcfcfc;
 }
 
@@ -285,7 +285,7 @@ sub {
 #content-text h2 {
   margin: 0 0 0.5em;
   padding: 4px 90px 0 38px;
-  background: transparent url('images/domino.png') no-repeat left 8px;
+  background: transparent url(index.php?tf=images/domino.png) no-repeat left 8px;
   min-height: 1.5em;
   text-align: left;
 }
@@ -390,7 +390,7 @@ ul.post-tags li {
   display: inline;
   margin: 0 1.2em 0 0;
   padding: 0 0 2px 22px;
-  background: transparent url('images/tag.png') no-repeat left top;
+  background: transparent url(index.php?tf=images/tag.png) no-repeat left top;
 }
 
 .post-excerpt {
@@ -466,19 +466,19 @@ ul.post-tags li {
 .comment_count {
   margin: 0 0 0 1.2em;
   padding: 0 0 0 1.8em;
-  background: transparent url('images/balloon.png') no-repeat left top;
+  background: transparent url(index.php?tf=images/balloon.png) no-repeat left top;
 }
 
 .ping_count {
   margin: 0 0 0 1.2em;
   padding: 0 0 0 1.8em;
-  background: transparent url('images/chain.png') no-repeat left top;
+  background: transparent url(index.php?tf=images/chain.png) no-repeat left top;
 }
 
 .attach_count {
   margin: 0 0 0 1.2em;
   padding: 0 0 0 1.8em;
-  background: transparent url('images/box.png') no-repeat left top;
+  background: transparent url(index.php?tf=images/box.png) no-repeat left top;
 }
 
 #attachments {
@@ -534,7 +534,7 @@ ul.post-tags li {
 
 .comment-wrapper,
 .ping-wrapper {
-  background: transparent url(images/date-com.png) no-repeat;
+  background: transparent url(index.php?tf=images/date-com.png) no-repeat;
   margin-bottom: 2em;
   min-height: 50px;
   font-size: 0.93em;
@@ -542,7 +542,7 @@ ul.post-tags li {
 }
 
 .comment-wrapper.me {
-  background: transparent url(images/date-com-me.png) no-repeat;
+  background: transparent url(index.php?tf=images/date-com-me.png) no-repeat;
 }
 
 .comment-wrapper p,
@@ -615,14 +615,14 @@ span.ping-year {
 
 p.comment-author-time,
 p.ping-author-time {
-  background: transparent url(images/clock.png) no-repeat;
+  background: transparent url(index.php?tf=images/clock.png) no-repeat;
   padding-left: 20px;
   margin-left: 100px;
 }
 
 span.comment-author.visitor,
 span.ping-author.visitor {
-  background: transparent url(images/bookmark.png) no-repeat scroll top right;
+  background: transparent url(index.php?tf=images/bookmark.png) no-repeat scroll top right;
   padding-right: 24px;
 }
 
@@ -766,7 +766,7 @@ span.ping-author.visitor {
 }
 
 #search input[type='text'] {
-  background: #fcfcfc url(images/magnifier.png) no-repeat scroll 0.5em center;
+  background: #fcfcfc url(index.php?tf=images/magnifier.png) no-repeat scroll 0.5em center;
   border: 1px solid #fcfcfc;
   padding: 0.25em 0.25em 0.25em 2.5em;
   width: 12em;
@@ -864,7 +864,7 @@ de leur frequence - voir 10/ classes communes */
 feed.png a piocher dans le theme par defaut par ex.) */
 
 .feed {
-  background: transparent url(images/feed.png) no-repeat left bottom;
+  background: transparent url(index.php?tf=images/feed.png) no-repeat left bottom;
   padding-left: 1.8em;
   line-height: 1.5em;
 }
@@ -944,7 +944,7 @@ feed.png a piocher dans le theme par defaut par ex.) */
 }
 
 .tags p {
-  background: transparent url(images/tags.png) no-repeat left bottom;
+  background: transparent url(index.php?tf=images/tags.png) no-repeat left bottom;
   padding-left: 1.8em;
   line-height: 1.5em;
 }
@@ -1096,7 +1096,7 @@ feed.png a piocher dans le theme par defaut par ex.) */
 }
 
 .contact-me p {
-  background: transparent url(images/mail.png) no-repeat scroll left bottom;
+  background: transparent url(index.php?tf=images/mail.png) no-repeat scroll left bottom;
   line-height: 1.5em;
   padding-left: 1.8em;
 }
