@@ -16,65 +16,15 @@ body {
   font-family: 'lucida grande', 'gill sans', arial, sans-serif;
 }
 
-h1 {
-}
-
-h2 {
-}
-
-h3 {
-}
-
-h4 {
-}
-
-h5 {
-}
-
-h6 {
-}
-
-p {
-}
-
-img {
-}
-
-sup {
-}
-
-abbr,
-acronym {
-}
-
-blockquote,
-q {
-}
-
 blockquote {
   background: transparent url(index.php?tf=images/quote.gif) no-repeat scroll left top;
   margin: 1em;
   padding: 0 0 0 70px;
 }
 
-cite {
-}
-
 [lang='fr'] q,
 q[lang='fr'] {
   quotes: '« ' ' »';
-}
-
-ul {
-}
-
-ol {
-}
-
-dl {
-}
-
-form {
 }
 
 fieldset {
@@ -89,14 +39,10 @@ input {
   border-width: 1px;
   border-style: solid;
   padding: 0.25em 0.6em;
-  background: #f7f7f7;
 }
 
 input:hover {
   border-color: #000;
-}
-
-label {
 }
 
 textarea {
@@ -109,18 +55,6 @@ a {
   outline: none;
 }
 
-a:link {
-}
-
-a:visited {
-}
-
-a:hover {
-}
-
-a:focus {
-}
-
 a[hreflang]:after {
   content: '\0000a0[' attr(hreflang) ']';
 }
@@ -131,9 +65,6 @@ a[hreflang|='fr']:after {
 
 a[hreflang] {
   content: normal !important;
-}
-
-a img {
 }
 
 code,
@@ -201,9 +132,6 @@ sub {
   3. PAGE
 ------------------------------------------------------------- */
 
-#page {
-}
-
 /* ------------------------------------------------------------
   4. HAUT DE PAGE
 ------------------------------------------------------------- */
@@ -211,9 +139,6 @@ sub {
 #top {
   background: transparent url(index.php?tf=images/titre.png) no-repeat 50% 50%;
   text-align: left;
-}
-
-#top h1 {
 }
 
 #top h1 a {
@@ -234,9 +159,6 @@ sub {
   5. WRAPPER MAIN CONTENT
 ------------------------------------------------------------- */
 
-#wrapper {
-}
-
 #main {
   font-size: 1.05em;
   text-align: justify;
@@ -244,9 +166,6 @@ sub {
 
 #main a {
   color: #ff7f00;
-}
-
-#content {
 }
 
 #content-img {
@@ -279,9 +198,6 @@ sub {
   color: #9fe60e;
 }
 
-#content-text {
-}
-
 #content-text h2 {
   margin: 0 0 0.5em;
   padding: 4px 90px 0 38px;
@@ -301,15 +217,6 @@ sub {
 
 #content-info {
   padding-right: 90px;
-}
-
-#content-info h2 {
-}
-
-#content-info p {
-}
-
-.content-inner {
 }
 
 .pagination,
@@ -334,24 +241,12 @@ sub {
   color: #9fe60e;
 }
 
-.pagination {
-}
-
-#navlinks {
-}
-
 /* ------------------------------------------------------------
   6. BILLETS
 ------------------------------------------------------------- */
 
 .post {
   margin-bottom: 2.5em;
-}
-
-.post.first {
-}
-
-.post.odd {
 }
 
 p.topfirst-separator {
@@ -367,9 +262,6 @@ p.topfirst-separator {
 
 .day-date {
   display: none;
-}
-
-.post-title {
 }
 
 .post-info,
@@ -411,10 +303,6 @@ ul.post-tags li {
   text-decoration: underline;
 }
 
-#content-text .post-content p,
-#content-text .post-excerpt p {
-}
-
 #content-text .post-info,
 #content-text .post-tags,
 #content-text .page-info {
@@ -452,15 +340,9 @@ ul.post-tags li {
   text-align: left;
 }
 
-.footnotes h4 {
-}
-
 #content-text .footnotes p {
   text-indent: 0;
   margin-top: 1.2em;
-}
-
-.post-info-co {
 }
 
 .comment_count {
@@ -481,51 +363,12 @@ ul.post-tags li {
   background: transparent url(index.php?tf=images/box.png) no-repeat left top;
 }
 
-#attachments {
-}
-
-#attachments h3 {
-}
-
-#attachments ul {
-}
-
-#attachments ul li {
-}
-
-#attachments li.audio {
-}
-
-#attachments li.package {
-}
-
-#attachments li.text {
-}
-
 /* ------------------------------------------------------------
   7. COMMENTAIRES, PINGS
 ------------------------------------------------------------- */
 
-#comments {
-}
-
-#pings {
-}
-
-#pr {
-}
-
-#comment-form {
-}
-
-#comments h3 {
-}
-
 #pings h3 {
   margin-top: 3em;
-}
-
-#pr h3 {
 }
 
 #comment-form h3 {
@@ -636,33 +479,6 @@ span.ping-author.visitor {
   margin: 0.5em 0;
 }
 
-#comments .first {
-}
-
-#comments .odd {
-}
-
-#comments .me {
-}
-
-#pings .first {
-}
-
-#pings .odd {
-}
-
-#pr dl {
-}
-
-#pr dd {
-}
-
-#comment-form fieldset {
-}
-
-.field {
-}
-
 .field label {
   clear: left;
   display: block;
@@ -680,39 +496,12 @@ span.ping-author.visitor {
   padding: 0.5em;
 }
 
-#comment-form input[type='submit'] {
-}
-
-#comment-form input[type='reset'] {
-}
-
-.form-help {
-}
-
-#ping-url {
-}
-
-#comments-feed {
-}
-
 /* ------------------------------------------------------------
   8. SIDEBAR
 ------------------------------------------------------------- */
 
 #sidebar {
   color: #9fe60e;
-}
-
-#sidebar #blogextra {
-}
-
-#blognav {
-}
-
-#blogextra {
-}
-
-#blogextra a {
 }
 
 #blognav a:hover,
@@ -734,12 +523,6 @@ span.ping-author.visitor {
   padding: 0;
 }
 
-#sidebar li {
-}
-
-#sidebar ul ul {
-}
-
 #blognav ul,
 #blogextra ul {
   margin-left: 1.2em;
@@ -755,18 +538,16 @@ span.ping-author.visitor {
 
 /* boites du menu des widgets livres avec Dotclear */
 
-#search {
-}
-
-#search form {
-}
-
 #search p {
   margin: 0;
 }
 
-#search input[type='text'] {
-  background: #fcfcfc url(index.php?tf=images/magnifier.png) no-repeat scroll 0.5em center;
+#search input[type='search'] {
+  background-image: url(index.php?tf=images/magnifier.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-x: 0.5em;
+  background-position-y: center;
   border: 1px solid #fcfcfc;
   padding: 0.25em 0.25em 0.25em 2.5em;
   width: 12em;
@@ -774,62 +555,17 @@ span.ping-author.visitor {
 
 /* ou #search #q */
 
-#search input[type='submit'] {
-}
-
 /* ou #search .submit */
-
-#topnav {
-}
 
 #topnav ul li,
 #topnav ul li a {
   display: inline;
 }
 
-.topnav-arch {
-}
-
-.topnav-home {
-}
-
-.selected {
-}
-
-.langs {
-}
-
-.categories {
-}
-
-.syndicate {
-}
-
 #blognav .syndicate ul,
 #blogextra .syndicate ul {
   list-style: none;
   margin-left: 0;
-}
-
-.lastposts {
-}
-
-.lastcomments {
-}
-
-.text {
-}
-
-.links {
-}
-
-.tags {
-}
-
-.tags ul {
-}
-
-.tags li {
 }
 
 /* a completer separement ou globalement pour le sidebar et la page
@@ -1009,30 +745,6 @@ feed.png a piocher dans le theme par defaut par ex.) */
   plus precisement (cf l'exemple ci-dessus pour les tags)
 ------------------------------------------------------------- */
 
-.dc-home {
-}
-
-.dc-home #blogextra a {
-}
-
-.dc-home #blogextra a:hover {
-}
-
-.dc-post {
-}
-
-.dc-categories {
-}
-
-.dc-category {
-}
-
-.dc-archive {
-}
-
-.dc-archive-month {
-}
-
 .dc-archive-month #content-text h2 {
   margin-top: 1.5em;
 }
@@ -1051,18 +763,6 @@ feed.png a piocher dans le theme par defaut par ex.) */
 .dc-archive-month #content-text p.post-info-co {
   text-align: left;
   margin-left: 2em;
-}
-
-.dc-tags {
-}
-
-.dc-tag {
-}
-
-.dc-404 {
-}
-
-.dc-search {
 }
 
 /* ---------------------------------------------------
