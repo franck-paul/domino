@@ -15,16 +15,16 @@ declare(strict_types=1);
 
 namespace Dotclear\Theme\domino;
 
+use ArrayObject;
+
 class FrontendBehaviors
 {
-    public static function templateBeforeBlock($b, $attr): string
+    /**
+     * @param  ArrayObject<array-key, mixed>    $attr
+     */
+    public static function templateBeforeBlock(string $b, ArrayObject $attr): string
     {
-        $params = [];
-        if ($b == 'Entries' && isset($attr['exclude_current']) && $attr['exclude_current'] == 1) {
-            if (!isset($params['sql'])) {
-                $params['sql'] = '';
-            }
-
+        if ($b === 'Entries' && isset($attr['exclude_current']) && $attr['exclude_current'] === 1) {
             return
                 "<?php\n" .
                 '@$params["sql"] .= "AND P.post_url != \'".App::frontend()->context()->posts->post_url."\' ";' . "\n" .
