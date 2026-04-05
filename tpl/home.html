@@ -87,11 +87,11 @@
                   <tpl:SysIf current_mode="!default">
                     <!-- # Entry with an excerpt -->
                     <tpl:EntryIf extended="1">
-                      <div class="post-content"><p>{{tpl:EntryExcerpt remove_html="1" cut_string="200"}}&hellip;</p><p class="read-it"><a href="{{tpl:EntryURL}}" title="{{tpl:lang Continue reading}} {{tpl:EntryTitle encode_html="1"}}">{{tpl:lang Continue reading}}</a></p></div>
+                      <div class="post-content"><p>{{tpl:EntryExcerpt strip_tags="1" cut_string="200"}}&hellip;</p><p class="read-it"><a href="{{tpl:EntryURL}}" title="{{tpl:lang Continue reading}} {{tpl:EntryTitle encode_html="1"}}">{{tpl:lang Continue reading}}</a></p></div>
                     </tpl:EntryIf>
                     <!-- # Display first 500 characters only, if post has no excerpt, on other page -->
                     <tpl:EntryIf extended="0">
-                      <div class="post-content"><p>{{tpl:EntryContent remove_html="1" cut_string="200"}}&hellip;</p><p class="read-it"><a href="{{tpl:EntryURL}}" title="{{tpl:lang Continue reading}} {{tpl:EntryTitle encode_html="1"}}">{{tpl:lang Continue reading}}</a></p></div>
+                      <div class="post-content"><p>{{tpl:EntryContent strip_tags="1" cut_string="200"}}&hellip;</p><p class="read-it"><a href="{{tpl:EntryURL}}" title="{{tpl:lang Continue reading}} {{tpl:EntryTitle encode_html="1"}}">{{tpl:lang Continue reading}}</a></p></div>
                     </tpl:EntryIf>
                   </tpl:SysIf>
                 </tpl:LoopPosition>
@@ -100,11 +100,11 @@
                   <!-- # Further entries on page -->
                   <!-- # Entry with an excerpt -->
                   <tpl:EntryIf extended="1">
-                    <div class="post-content"><p>{{tpl:EntryExcerpt remove_html="1" cut_string="200"}}&hellip;</p><p class="read-it"><a href="{{tpl:EntryURL}}" title="{{tpl:lang Continue reading}} {{tpl:EntryTitle encode_html="1"}}">{{tpl:lang Continue reading}}</a></p></div>
+                    <div class="post-content"><p>{{tpl:EntryExcerpt strip_tags="1" cut_string="200"}}&hellip;</p><p class="read-it"><a href="{{tpl:EntryURL}}" title="{{tpl:lang Continue reading}} {{tpl:EntryTitle encode_html="1"}}">{{tpl:lang Continue reading}}</a></p></div>
                   </tpl:EntryIf>
                   <tpl:EntryIf extended="0">
                     <!-- # Display first 500 characters only if post has no excerpt -->
-                    <div class="post-content"><p>{{tpl:EntryContent remove_html="1" cut_string="200"}}&hellip;</p><p class="read-it"><a href="{{tpl:EntryURL}}" title="{{tpl:lang Continue reading}} {{tpl:EntryTitle encode_html="1"}}">{{tpl:lang Continue reading}}</a></p></div>
+                    <div class="post-content"><p>{{tpl:EntryContent strip_tags="1" cut_string="200"}}&hellip;</p><p class="read-it"><a href="{{tpl:EntryURL}}" title="{{tpl:lang Continue reading}} {{tpl:EntryTitle encode_html="1"}}">{{tpl:lang Continue reading}}</a></p></div>
                   </tpl:EntryIf>
                 </tpl:LoopPosition>
 
