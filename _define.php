@@ -9,20 +9,24 @@
  * @copyright Franck Paul (contact@open-time.net)
  * @copyright GPL-2.0
  */
-$this->registerModule(
-    'Domino',
-    'Deviation Cafe-Creme, Structure Aorakit-1B de Kozlika',
-    'Franck Paul',
-    '7.2',
-    [
-        'date'     => '2026-04-05T12:02:06+0200',
-        'requires' => [['core', '2.36']],
-        'type'     => 'theme',
-        'overload' => true,
+declare(strict_types=1);
 
-        'details'    => 'https://open-time.net/?q=domino',
-        'support'    => 'https://github.com/franck-paul/domino',
-        'repository' => 'https://raw.githubusercontent.com/franck-paul/domino/main/dcstore.xml',
-        'license'    => 'gpl2',
-    ]
-);
+if (isset($this) && is_object($this) && method_exists($this, 'registerModule') && isset($this->id) && is_string($this->id)) {
+    $this->registerModule(
+        'Domino',
+        'Deviation Cafe-Creme, Structure Aorakit-1B de Kozlika',
+        'Franck Paul',
+        '7.2',
+        [
+            'date'     => '2026-04-05T12:02:06+0200',
+            'requires' => [['core', '2.36']],
+            'type'     => 'theme',
+            'overload' => true,
+
+            'details'    => 'https://open-time.net/?q=domino',
+            'support'    => 'https://github.com/franck-paul/domino',
+            'repository' => 'https://raw.githubusercontent.com/franck-paul/domino/main/dcstore.xml',
+            'license'    => 'gpl2',
+        ]
+    );
+}
